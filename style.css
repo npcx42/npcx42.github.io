@@ -54,7 +54,7 @@
 	backdrop-filter: blur(15px);
 	background-color: #313033a8;
 	border-radius: 30px 30px 30px 30px;
-	bottom: 10px;
+	bottom: 15px;
 	height: 50px;
 	position: fixed;
 	width: calc(100% - 50px); /* уменьшаем ширину на 20px */
