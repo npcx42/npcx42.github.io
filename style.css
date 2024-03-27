@@ -62,7 +62,7 @@
 
   /* Style the heading */
   h1 {
-	font-family: "Google Sans", sans-serif;
+	font-family: 'Product Sans Light', sans-serif;
 	font-size: 3rem;
 	margin-bottom: 30px;
 	text-transform: uppercase;
@@ -71,7 +71,7 @@
   
   /* Style the paragraph */
   p {
-	font-family: "Google Sans", sans-serif;
+	font-family: 'Product Sans Light', sans-serif;
 	font-size: 1.2rem;
 	line-height: 1.5;
 	margin-bottom: 30px;
@@ -102,11 +102,11 @@
   }
   
   .footer p {
-	font-family: "Google Sans", sans-serif;
-	font-size: 14px;
+	font-family: 'Product Sans Light', sans-serif;
+    font-size: 18px;
 	color: #ffffff;
 	margin: 0;
-	padding-top: 15px;
+	padding-top: 10px;
   }
   
   /* Add heart emoji to the footer */
@@ -127,7 +127,7 @@
 	color: #1f1b22; /* цвет текста */
 	cursor: pointer;
 	display: inline-block;
-	font-family: "Google Sans", sans-serif;
+	font-family: 'Product Sans Light', sans-serif;
 	font-size: 1.2rem;
 	padding: 10px 20px;
 	text-decoration: none;
@@ -153,7 +153,7 @@
 	color: #1f1b22; /* цвет текста */
 	cursor: pointer;
 	display: inline-block;
-	font-family: "Google Sans", sans-serif;
+	font-family: 'Product Sans Light', sans-serif;
 	font-size: 1.2rem;
 	padding: 10px 20px;
 	text-decoration: none;
