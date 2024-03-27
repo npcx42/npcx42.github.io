@@ -18,7 +18,36 @@
 	width: 100%;
 	z-index: -1;
   }
-  
+
+  .avatar-container {
+    display: flex;
+    align-items: center;
+	margin-bottom: 20px;
+    justify-content: center; /* Центрируем аватарки по горизонтали */
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 10px;
+}
+
+.avatar1 {
+    background-image: url('https://i.imgur.com/gWaAI22.jpeg');
+}
+
+.avatar2 {
+    background-image: url('https://i.imgur.com/co0Muyb.jpeg');
+}
+
+.heart {
+    font-size: 40px;
+    color: #E6DEFF;
+    margin: 0 10px;
+    flex-shrink: 0; /* Чтобы сердце не сжималось */
+}
   .container {
     background-color: #313033a8;
     backdrop-filter: blur(5px);
