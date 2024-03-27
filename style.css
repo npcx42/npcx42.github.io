@@ -50,7 +50,7 @@
   }
   
   /* Add a hover effect to the container */
-  footer {
+  .footer {
 	backdrop-filter: blur(15px);
 	background-color: #313033a8;
 	border-radius: 30px 30px 30px 30px;
@@ -67,12 +67,12 @@
   }
   
   /* Add a hover effect to the footer */
-  footer:hover {
+  .footer:hover {
 	box-shadow: 0 0 25px rgba(230, 222, 255, 0.6);
 	transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
   
-  footer p {
+  .footer p {
 	font-family: "Google Sans", sans-serif;
 	font-size: 14px;
 	color: #ffffff;
@@ -81,13 +81,13 @@
   }
   
   /* Add heart emoji to the footer */
-  footer span {
+  .footer span {
 	font-size: 16px;
 	color: #E6DEFF;
   }
   
   /* Define the heart emoji */
-  footer span::before {
+  .footer span::before {
 	content: "\2764\ufe0f";
   }
 	
