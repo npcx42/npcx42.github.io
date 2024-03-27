@@ -20,16 +20,16 @@
   }
   
   .container {
-	background-color: #313033a8;
-	backdrop-filter: blur(5px);
-	border-radius: 30px;
-	margin: 80px auto;
-	max-width: 500px;
-	padding: 60px;
-	text-align: center;
-	overflow: hidden;
-	transition: box-shadow 0.3s ease, transform 0.3s ease;
-  }
+    background-color: #313033a8;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    margin: 80px auto;
+    max-width: 500px;
+    padding: 60px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Change here */
+}
 
   /* Style the heading */
   h1 {
@@ -51,20 +51,20 @@
   
   /* Add a hover effect to the container */
   .footer {
-	backdrop-filter: blur(15px);
-	background-color: #313033a8;
-	border-radius: 30px 30px 30px 30px;
-	bottom: 10px;
-	height: 50px;
-	position: fixed;
-	width: calc(100% - 50px); /* уменьшаем ширину на 20px */
-	padding: 0 25px; /* добавляем отступы по 10px слева и справа */
-	left: 25px;
-	z-index: 1;
-	color: #ffffff;
-	text-align: center;
-	transition: box-shadow 0.3s ease, transform 0.3s ease;
-  }
+    backdrop-filter: blur(15px);
+    background-color: #313033a8;
+    border-radius: 30px 30px 30px 30px;
+    bottom: 10px;
+    height: 50px;
+    position: fixed;
+    width: calc(100% - 50px); /* уменьшаем ширину на 20px */
+    padding: 0 25px; /* добавляем отступы по 10px слева и справа */
+    left: 25px;
+    z-index: 1;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.3s ease; /* Change here */
+}
   
   /* Add a hover effect to the footer */
   .footer:hover {
