@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #000; /* Черный фон, чтобы контрастировать с текстом */
+        }
+        .text-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        .rotating-text {
+            font-family: Arial, sans-serif;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+            white-space: nowrap;
+            text-align: center;
+            animation: spin 10s linear infinite, rainbow 5s linear infinite;
+        }
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes rainbow {
+            0% {
+                color: #ff0000; /* Red */
+            }
+            14% {
+                color: #ff7f00; /* Orange */
+            }
+            28% {
+                color: #ffff00; /* Yellow */
+            }
+            42% {
+                color: #00ff00; /* Green */
+            }
+            57% {
+                color: #0000ff; /* Blue */
+            }
+            71% {
+                color: #4b0082; /* Indigo */
+            }
+            85% {
+                color: #9400d3; /* Violet */
+            }
+            100% {
+                color: #ff0000; /* Red */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <div class="rotating-text">1488 911 1337 228</div>
+    </div>
+</body>
+</html>

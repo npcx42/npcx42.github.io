@@ -19,45 +19,16 @@
   z-index: -1;
 }
 
-.avatar-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  justify-content: center; /* Центрируем аватарки по горизонтали */
-}
-
-.avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-size: cover;
-  margin: 0 10px;
-}
-
-.avatar1 {
-  background-image: url("https://i.imgur.com/AdVjjEt.jpeg");
-}
-
-.avatar2 {
-  background-image: url("https://i.imgur.com/v2KTN88.jpeg");
-}
-
-.heart {
-  font-size: 40px;
-  color: #e6deff;
-  margin: 0 10px;
-  flex-shrink: 0; /* Чтобы сердце не сжималось */
-}
 .container {
   background-color: #313033a8;
   backdrop-filter: blur(5px);
   border-radius: 30px;
-  margin: 80px auto;
+  margin: 110px auto;
   max-width: 500px;
   padding: 60px;
   text-align: center;
   overflow: hidden;
-  transition: all 0.3s ease; /* Change here */
+  transition: all 0.3s ease;
 }
 
 /* Style the heading */
@@ -65,8 +36,8 @@ h1 {
   font-family: "Product Sans Light", sans-serif;
   font-size: 3rem;
   margin-bottom: 30px;
-  text-transform: uppercase;
   color: #e6deff;
+  text-transform: none; /* Убираем верхний регистр */
 }
 
 /* Style the paragraph */
@@ -78,11 +49,10 @@ p {
   color: #e6deff;
 }
 
-/* Add a hover effect to the container */
 .footer {
   backdrop-filter: blur(15px);
   background-color: #313033a8;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px;
   bottom: 10px;
   height: 50px;
   position: fixed;
@@ -92,10 +62,9 @@ p {
   z-index: 1;
   color: #ffffff;
   text-align: center;
-  transition: all 0.3s ease; /* Change here */
+  transition: all 0.3s ease;
 }
 
-/* Add a hover effect to the footer */
 .footer:hover {
   box-shadow: 0 0 25px rgba(230, 222, 255, 0.6);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -109,30 +78,33 @@ p {
   padding-top: 12px;
 }
 
-/* Add heart emoji to the footer */
 .footer span {
   font-size: 16px;
   color: #e6deff;
 }
 
-/* Define the heart emoji */
 .footer span::before {
   content: "\2764\ufe0f";
 }
 
+/* Стили для кнопки Telegram */
 .telegram-button {
   background-color: #e6deff;
-  border: 2px solid #e6deff; /* обводка шириной 2px и цветом #FF2D55 */
+  border: 2px solid #e6deff;
   border-radius: 30px;
-  color: #1f1b22; /* цвет текста */
+  color: #1f1b22;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex; /* Используем flex для выравнивания текста и иконок */
+  align-items: center; /* Центрируем текст и иконки по вертикали */
+  justify-content: center; /* Центрируем текст и иконки по горизонтали */
   font-family: "Product Sans Light", sans-serif;
   font-size: 1.2rem;
   padding: 10px 20px;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
   transform: translate(0, 0);
+  width: 110px; /* Устанавливаем одинаковую ширину для всех кнопок */
+  height: 50px; /* Устанавливаем одинаковую высоту для всех кнопок */
 }
 
 .telegram-button:hover {
@@ -146,19 +118,24 @@ p {
   box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.5);
 }
 
+/* Стили для кнопки TikTok */
 .tiktok-button {
   background-color: #e6deff;
-  border: 2px solid #e6deff; /* обводка шириной 2px и цветом #FF2D55 */
+  border: 2px solid #e6deff;
   border-radius: 30px;
-  color: #1f1b22; /* цвет текста */
+  color: #1f1b22;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex; /* Используем flex для выравнивания текста и иконок */
+  align-items: center; /* Центрируем текст и иконки по вертикали */
+  justify-content: center; /* Центрируем текст и иконки по горизонтали */
   font-family: "Product Sans Light", sans-serif;
   font-size: 1.2rem;
   padding: 10px 20px;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
   transform: translate(0, 0);
+  width: 110px; /* Устанавливаем одинаковую ширину для всех кнопок */
+  height: 50px; /* Устанавливаем одинаковую высоту для всех кнопок */
 }
 
 .tiktok-button:hover {
@@ -174,4 +151,15 @@ p {
 
 .tiktok-button i {
   margin-right: 10px;
+}
+
+.footer-heart-link {
+  color: #e6deff; /* Цвет сердечка */
+  text-decoration: none; /* Убираем подчеркивание */
+  font-size: 1.2rem; /* Размер сердечка */
+}
+
+.footer-heart-link:hover {
+  color: #ff5fa2; /* Цвет сердечка при наведении */
+  text-decoration: none; /* Убираем подчеркивание при наведении */
 }
