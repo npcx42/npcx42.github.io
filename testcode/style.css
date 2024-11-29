@@ -1,0 +1,129 @@
+/* Подключение шрифта Cascadia Code */
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;600&display=swap');
+
+/* Общие стили */
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Cascadia Code', monospace; /* Устанавливаем шрифт Cascadia Code */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Основной контейнер */
+#terminal {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #fff;
+    width: 100%;
+    max-width: 500px;
+    white-space: pre-wrap;
+    position: relative;
+}
+
+/* Заголовок */
+#title {
+    font-size: 24px;
+    margin-bottom: -40px;
+    color: #fff;
+}
+
+/* Информация */
+#info {
+    font-size: 16px;
+    margin-bottom: -40px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* Меню */
+#menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.menu-item {
+    padding: 8px 16px;
+    margin: 5px;
+    border: 1px solid #fff;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.menu-item:hover,
+.menu-item.selected {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Ссылки в футере */
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Футер */
+#footer {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Курсор */
+#cursor {
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
+    animation: blink 0.8s step-end infinite;
+    margin-left: 5px;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    #terminal {
+        border: none; /* Убираем рамку */
+        padding: 10px;
+    }
+
+    #menu {
+        flex-direction: row; /* Кнопки располагаются по горизонтали */
+        justify-content: center;
+        width: 100%;
+    }
+
+    .menu-item {
+        margin: 5px;
+        width: auto; /* Кнопки будут иметь свою ширину */
+        flex: none; /* Убираем растягивание кнопок на всю ширину */
+    }
+}
