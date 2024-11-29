@@ -1,12 +1,8 @@
-/* Подключение шрифта Cascadia Code */
-@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;600&display=swap');
-
-/* Общие стили */
 body {
     margin: 0;
     background-color: #000;
     color: #fff;
-    font-family: 'Cascadia Code', monospace; /* Устанавливаем шрифт Cascadia Code */
+    font-family: "Courier New", Courier, monospace;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +10,6 @@ body {
     overflow: hidden;
 }
 
-/* Основной контейнер */
 #terminal {
     display: flex;
     flex-direction: column;
@@ -22,21 +17,20 @@ body {
     align-items: center;
     text-align: center;
     padding: 10px;
-    border: 2px solid #fff;
     width: 100%;
     max-width: 500px;
     white-space: pre-wrap;
     position: relative;
+    /* Убираем рамку */
+    border: none;
 }
 
-/* Заголовок */
 #title {
     font-size: 24px;
     margin-bottom: -40px;
     color: #fff;
 }
 
-/* Информация */
 #info {
     font-size: 16px;
     margin-bottom: -40px;
@@ -44,7 +38,6 @@ body {
     line-height: 1.5;
 }
 
-/* Меню */
 #menu {
     display: flex;
     justify-content: space-between;
@@ -72,7 +65,6 @@ body {
     color: #000;
 }
 
-/* Ссылки в футере */
 .footer-link {
     color: #fff;
     text-decoration: none;
@@ -82,7 +74,6 @@ body {
     text-decoration: underline;
 }
 
-/* Футер */
 #footer {
     font-size: 14px;
     display: flex;
@@ -90,7 +81,6 @@ body {
     align-items: center;
 }
 
-/* Курсор */
 #cursor {
     width: 10px;
     height: 20px;

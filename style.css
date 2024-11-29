@@ -163,3 +163,52 @@ p {
   color: #ff5fa2; /* Цвет сердечка при наведении */
   text-decoration: none; /* Убираем подчеркивание при наведении */
 }
+
+/* Стиль для баннера */
+#banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.7); /* Черный полупрозрачный фон */
+  backdrop-filter: blur(5px); /* Добавляем блюр для фона */
+  color: white;
+  text-align: center;
+  font-family: "Google Sans", sans-serif;
+  z-index: 10; /* Баннер всегда поверх */
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Стиль для контента внутри баннера */
+#banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+#banner-content p {
+  margin: 0;
+  flex: 1;
+}
+
+#banner-content a {
+  color: #ff5fa2;
+  text-decoration: none;
+}
+
+#close-banner {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Переходы для кнопки при наведении */
+#close-banner:hover {
+  color: #ff5fa2;
+}

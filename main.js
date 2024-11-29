@@ -3,3 +3,8 @@ function showTextInConsole() {
 }
 
 window.addEventListener("load", showTextInConsole);
+
+document.getElementById('close-banner').addEventListener('click', function() {
+  document.getElementById('banner').style.visibility = 'hidden';
+  document.getElementById('banner').style.opacity = '0';
+});
