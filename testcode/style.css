@@ -21,31 +21,28 @@ body {
     max-width: 500px;
     white-space: pre-wrap;
     position: relative;
+    /* Убираем рамку */
     border: none;
-    z-index: 1;  /* Добавляем z-index, чтобы он был выше остальных элементов */
 }
 
 #title {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: -40px;
     color: #fff;
 }
 
 #info {
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: -40px;
     color: #fff;
     line-height: 1.5;
-    z-index: 1;  /* Убедитесь, что текст в блоке info находится выше кнопок */
-    position: relative; /* Позволяет добавлять z-index */
 }
 
 #menu {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 10px;
-    z-index: 1;  /* Убедитесь, что меню остается на своем месте */
+    margin-bottom: 10px;
 }
 
 .menu-item {
