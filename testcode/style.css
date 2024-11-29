@@ -2,7 +2,7 @@ body {
     margin: 0;
     background-color: #000;
     color: #fff;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Cascadia Code", monospace; /* Используем только Cascadia Code */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,19 +21,18 @@ body {
     max-width: 500px;
     white-space: pre-wrap;
     position: relative;
-    /* Убираем рамку */
-    border: none;
+    border: none; /* Убираем рамку */
 }
 
 #title {
     font-size: 24px;
-    margin-bottom: -40px;
+    margin-bottom: -40px; /* Отрегулировал отступ */
     color: #fff;
 }
 
 #info {
     font-size: 16px;
-    margin-bottom: -40px;
+    margin-bottom: -40px; /* Увеличил отступ для лучшего внешнего вида */
     color: #fff;
     line-height: 1.5;
 }
@@ -79,6 +78,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
 #cursor {
@@ -101,8 +101,7 @@ body {
 /* Медиазапросы для мобильных устройств */
 @media (max-width: 768px) {
     #terminal {
-        border: none; /* Убираем рамку */
-        padding: 10px;
+        padding: 10px; /* Убираем рамку */
     }
 
     #menu {
