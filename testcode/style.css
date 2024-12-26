@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #000;
+    background-color: #00000f;
     color: #fff;
     font-family: "Cascadia Code", monospace; /* Используем только Cascadia Code */
     display: flex;
@@ -27,7 +27,7 @@ body {
 #title {
     font-size: 24px;
     margin-bottom: -40px; /* Отрегулировал отступ */
-    color: #fff;
+    color: #d375bc;
 }
 
 #info {
@@ -44,10 +44,14 @@ body {
     margin-bottom: 10px;
 }
 
+#info strong {
+    color: #d375bc;
+}
+
 .menu-item {
     padding: 8px 16px;
     margin: 5px;
-    border: 1px solid #fff;
+    border: 1px solid #d375bc;
     flex: 1;
     text-align: center;
     cursor: pointer;
@@ -60,7 +64,7 @@ body {
 
 .menu-item:hover,
 .menu-item.selected {
-    background-color: #fff;
+    background-color: #d375bc;
     color: #000;
 }
 
@@ -84,7 +88,7 @@ body {
 #cursor {
     width: 10px;
     height: 20px;
-    background-color: #fff;
+    background-color: #da8cc6;
     animation: blink 0.8s step-end infinite;
     margin-left: 5px;
 }
