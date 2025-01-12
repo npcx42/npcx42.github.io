@@ -1,214 +1,122 @@
-/* Reset default browser styles */
-* {
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Set the background image and blur effect */
-.background {
-  background-image: url("https://i.imgur.com/oZN3W0z.jpeg");
-  background-size: cover;
-  background-position: center center;
-  filter: blur(0px);
+  background-color: #00000f;
+  color: #fff;
+  font-family: "Cascadia Code", monospace; /* Используем только Cascadia Code */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: -1;
-}
-
-.container {
-  background-color: #313033a8;
-  backdrop-filter: blur(5px);
-  border-radius: 30px;
-  margin: 110px auto;
-  max-width: 500px;
-  padding: 60px;
-  text-align: center;
   overflow: hidden;
-  transition: all 0.3s ease;
 }
 
-/* Style the heading */
-h1 {
-  font-family: "Product Sans Light", sans-serif;
-  font-size: 3rem;
-  margin-bottom: 30px;
-  color: #e6deff;
-  text-transform: none; /* Убираем верхний регистр */
-}
-
-/* Style the paragraph */
-p {
-  font-family: "Product Sans Light", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 30px;
-  color: #e6deff;
-}
-
-.footer {
-  backdrop-filter: blur(15px);
-  background-color: #313033a8;
-  border-radius: 30px;
-  bottom: 10px;
-  height: 50px;
-  position: fixed;
-  width: calc(100% - 50px); /* уменьшаем ширину на 20px */
-  padding: 0 25px; /* добавляем отступы по 10px слева и справа */
-  left: 25px;
-  z-index: 1;
-  color: #ffffff;
+#terminal {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   text-align: center;
-  transition: all 0.3s ease;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  white-space: pre-wrap;
+  position: relative;
+  border: none; /* Убираем рамку */
 }
 
-.footer:hover {
-  box-shadow: 0 0 25px rgba(230, 222, 255, 0.6);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+#title {
+  font-size: 24px;
+  margin-bottom: -40px; /* Отрегулировал отступ */
+  color: #d375bc;
 }
 
-.footer p {
-  font-family: "Product Sans Light", sans-serif;
-  font-size: 18px;
-  color: #ffffff;
-  margin: 0;
-  padding-top: 12px;
-}
-
-.footer span {
+#info {
   font-size: 16px;
-  color: #e6deff;
+  margin-bottom: -40px; /* Увеличил отступ для лучшего внешнего вида */
+  color: #fff;
+  line-height: 1.5;
 }
 
-.footer span::before {
-  content: "\2764\ufe0f";
+#menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-/* Стили для кнопки Telegram */
-.telegram-button {
-  background-color: #e6deff;
-  border: 2px solid #e6deff;
-  border-radius: 30px;
-  color: #1f1b22;
+#info strong {
+  color: #d375bc;
+}
+
+.menu-item {
+  padding: 8px 16px;
+  margin: 5px;
+  border: 1px solid #d375bc;
+  flex: 1;
+  text-align: center;
   cursor: pointer;
-  display: inline-flex; /* Используем flex для выравнивания текста и иконок */
-  align-items: center; /* Центрируем текст и иконки по вертикали */
-  justify-content: center; /* Центрируем текст и иконки по горизонтали */
-  font-family: "Product Sans Light", sans-serif;
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  transform: translate(0, 0);
-  width: 110px; /* Устанавливаем одинаковую ширину для всех кнопок */
-  height: 50px; /* Устанавливаем одинаковую высоту для всех кнопок */
+  transition: background-color 0.2s, color 0.2s;
 }
 
-.telegram-button:hover {
-  background-color: transparent;
-  color: #e6deff;
-  transform: translate(0px, 0px);
-}
-
-.telegram-button:active {
-  background-color: transparent;
-  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.5);
-}
-
-/* Стили для кнопки TikTok */
-.tiktok-button {
-  background-color: #e6deff;
-  border: 2px solid #e6deff;
-  border-radius: 30px;
-  color: #1f1b22;
-  cursor: pointer;
-  display: inline-flex; /* Используем flex для выравнивания текста и иконок */
-  align-items: center; /* Центрируем текст и иконки по вертикали */
-  justify-content: center; /* Центрируем текст и иконки по горизонтали */
-  font-family: "Product Sans Light", sans-serif;
-  font-size: 1.2rem;
-  padding: 10px 20px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  transform: translate(0, 0);
-  width: 110px; /* Устанавливаем одинаковую ширину для всех кнопок */
-  height: 50px; /* Устанавливаем одинаковую высоту для всех кнопок */
-}
-
-.tiktok-button:hover {
-  background-color: transparent;
-  color: #e6deff;
-  transform: translate(0px, 0px);
-}
-
-.tiktok-button:active {
-  background-color: transparent;
-  box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.5);
-}
-
-.tiktok-button i {
+.menu-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.footer-heart-link {
-  color: #e6deff; /* Цвет сердечка */
-  text-decoration: none; /* Убираем подчеркивание */
-  font-size: 1.2rem; /* Размер сердечка */
+.menu-item:hover,
+.menu-item.selected {
+  background-color: #d375bc;
+  color: #000;
 }
 
-.footer-heart-link:hover {
-  color: #ff5fa2; /* Цвет сердечка при наведении */
-  text-decoration: none; /* Убираем подчеркивание при наведении */
-}
-
-/* Стиль для баннера */
-#banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px 20px;
-  background: rgba(0, 0, 0, 0.7); /* Черный полупрозрачный фон */
-  backdrop-filter: blur(5px); /* Добавляем блюр для фона */
-  color: white;
-  text-align: center;
-  font-family: "Google Sans", sans-serif;
-  z-index: 10; /* Баннер всегда поверх */
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-/* Стиль для контента внутри баннера */
-#banner-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 14px;
-}
-
-#banner-content p {
-  margin: 0;
-  flex: 1;
-}
-
-#banner-content a {
-  color: #ff5fa2;
+.footer-link {
+  color: #fff;
   text-decoration: none;
 }
 
-#close-banner {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
+.footer-link:hover {
+  text-decoration: underline;
 }
 
-/* Переходы для кнопки при наведении */
-#close-banner:hover {
-  color: #ff5fa2;
+#footer {
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#cursor {
+  width: 10px;
+  height: 20px;
+  background-color: #da8cc6;
+  animation: blink 0.8s step-end infinite;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0%, 50% {
+      opacity: 1;
+  }
+  51%, 100% {
+      opacity: 0;
+  }
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+  #terminal {
+      padding: 10px; /* Убираем рамку */
+  }
+
+  #menu {
+      flex-direction: row; /* Кнопки располагаются по горизонтали */
+      justify-content: center;
+      width: 100%;
+  }
+
+  .menu-item {
+      margin: 5px;
+      width: auto; /* Кнопки будут иметь свою ширину */
+      flex: none; /* Убираем растягивание кнопок на всю ширину */
+  }
 }

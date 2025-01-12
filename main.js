@@ -1,10 +1,35 @@
-function showTextInConsole() {
-  console.log("всё что вы видите на сайте чистая правда. 1488 911");
+const menuItems = document.querySelectorAll('.menu-item');
+let selectedIndex = 0;
+
+// Update the menu to reflect the selected item
+function updateMenu() {
+    menuItems.forEach((item, index) => {
+        item.classList.toggle('selected', index === selectedIndex);
+    });
 }
 
-window.addEventListener("load", showTextInConsole);
-
-document.getElementById('close-banner').addEventListener('click', function() {
-  document.getElementById('banner').style.visibility = 'hidden';
-  document.getElementById('banner').style.opacity = '0';
+// Handle keypress events for navigation
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') {
+        selectedIndex = (selectedIndex - 1 + menuItems.length) % menuItems.length;
+    } else if (event.key === 'ArrowRight') {
+        selectedIndex = (selectedIndex + 1) % menuItems.length;
+    } else if (event.key === 'Enter') {
+        // Redirect based on the selected item
+        const selectedItem = menuItems[selectedIndex];
+        window.open(selectedItem.dataset.link, '_blank');
+    }
+    updateMenu();
 });
+
+// Add touch and click events
+menuItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+        selectedIndex = index;
+        updateMenu();
+        window.open(item.dataset.link, '_blank');
+    });
+});
+
+// Initialize the menu
+updateMenu();
