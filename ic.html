@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IC</title>
+    <style>
+        body {
+            background-color: #00000F;
+            color: white;
+            font-family: 'Cascadia Code', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: left;
+            padding: 20px;
+            font-size: 2em;
+        }
+        .cursor {
+            display: inline-block;
+            width: 12px;
+            height: 1em;
+            background-color: #d375bc;
+            vertical-align: bottom;
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>thinkaboutrue@server:~$ ic<span class="cursor"></span></p>
+        <p><span style="color: #d375bc;">coming soon...</span></p>
+    </div>
+</body>
+</html>
